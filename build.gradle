@@ -42,10 +42,11 @@ def modRepo
 if (System.env.REPO_NAME) {
 	modRepo = System.env.REPO_NAME
 } else {
-	modRepo = "FabLabsMC/${project.library_name}"
+	modRepo = "Hephaestus-Dev/EAM-API"
 }
 
 minecraft {
+	accessWidener = file("src/main/resources/eam.accesswidener")
 }
 
 repositories {
@@ -57,7 +58,6 @@ dependencies {
 	minecraft "com.mojang:minecraft:${project.minecraft_version}"
 	mappings "net.fabricmc:yarn:${project.minecraft_version}+build.${project.yarn_build}:v2"
 	modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
-	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
 	// compileOnly "com.google.code.findbugs:jsr305:3.0.2" //TODO: what are we going to do for annotations?
 }
 
@@ -81,7 +81,6 @@ javadoc {
 		charSet = 'UTF-8'
 		memberLevel = JavadocMemberLevel.PACKAGE
 		links(
-			    "https://maven.fabricmc.net/docs/fabric-api-${project.fabric_version}/",
                 "https://maven.fabricmc.net/docs/yarn-${project.yarn_build}/",
 				'https://guava.dev/releases/21.0/api/docs/',
 				'https://asm.ow2.io/javadoc/',

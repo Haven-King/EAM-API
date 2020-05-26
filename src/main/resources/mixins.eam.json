@@ -1,0 +1,10 @@
+{
+  "required": true,
+  "package": "io.github.fablabsmc.fablabs.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "mixins": [
+    "eam.EntityAttributeModifierMixin",
+    "eam.ItemStackMixin",
+    "eam.SwordItemDebugMixin"
+  ]
+}

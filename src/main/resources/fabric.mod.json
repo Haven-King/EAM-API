@@ -3,18 +3,15 @@
   "id": "${id}",
   "version": "${version}",
 
-  "name": "FabLabs ${libname} version ${libver}",
-  "icon": "assets/blueprint/icon.png",
-  "description": "Template for starting out FabLabs drafts",
+  "name": "${libname} version ${libver}",
+  "icon": "assets/eam/icon.png",
+  "description": "A minimal API to make creating Entity Attribute Modifiers easier",
   "license": "MIT",
   "contact": {
     "sources": "https://github.com/${repo}"
   },
   "environment": "*",
   "entrypoints": {
-    "main": [
-      "io.github.fablabsmc.fablabs.api.blueprint.v1.Blueprint"
-    ]
   },
   "mixins": [
     "mixins.${libname}.json"
