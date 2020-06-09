@@ -1,8 +1,8 @@
-package io.github.fablabsmc.fablabs.api.eam.v1;
+package io.github.fablabsmc.fablabs.api.entityattribute.v1;
 
 import java.util.UUID;
 
-import io.github.fablabsmc.fablabs.impl.eam.EntityAttributeModifierRegistry;
+import io.github.fablabsmc.fablabs.impl.entityattribute.EntityAttributeModifierRegistry;
 
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.attribute.EntityAttribute;
@@ -26,23 +26,17 @@ public final class FabricEntityAttributeModifier {
 		return this.modifierID;
 	}
 
-	private EntityAttributeModifier newVanillaModifier(float value) {
+	public EntityAttribute getAttribute() {
+		return this.attribute;
+	}
+
+	public EntityAttributeModifier newVanillaModifier(float value) {
 		return new EntityAttributeModifier(
 						this.modifierID,
 						"NAME",
 						value,
 						this.operation
 		);
-	}
-
-	/**
-	 * Use this method to apply an EntityAttributeModifier to a modded object.
-	 *
-	 * @param consumer the object that can have an EntityAttributeModifier attached to it
-	 * @param value    the modifier value
-	 */
-	public void applyTo(EntityAttributeConsumer consumer, float value) {
-		consumer.addAttributeModifier(this.attribute, this.newVanillaModifier(value));
 	}
 
 	/**

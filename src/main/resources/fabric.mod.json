@@ -4,7 +4,7 @@
   "version": "${version}",
 
   "name": "${libname} version ${libver}",
-  "icon": "assets/eam/icon.png",
+  "icon": "assets/entityattribute/icon.png",
   "description": "A minimal API to make creating Entity Attribute Modifiers easier",
   "license": "MIT",
   "contact": {
@@ -13,6 +13,7 @@
   "environment": "*",
   "entrypoints": {
   },
+  "accesswidener": "entityattribute.accesswidener",
   "mixins": [
     "mixins.${libname}.json"
   ],

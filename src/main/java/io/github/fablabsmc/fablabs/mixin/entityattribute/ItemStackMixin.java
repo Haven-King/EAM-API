@@ -1,4 +1,4 @@
-package io.github.fablabsmc.fablabs.mixin.eam;
+package io.github.fablabsmc.fablabs.mixin.entityattribute;
 
 import java.util.LinkedHashMap;
 import java.util.Map;
@@ -6,8 +6,10 @@ import java.util.Optional;
 
 import com.google.common.collect.LinkedHashMultimap;
 import com.google.common.collect.Multimap;
-import io.github.fablabsmc.fablabs.impl.eam.EntityAttributeModifierRegistry;
-import io.github.fablabsmc.fablabs.impl.eam.FabricEntityAttributes;
+import io.github.fablabsmc.fablabs.impl.entityattribute.EntityAttributeModifierRegistry;
+import io.github.fablabsmc.fablabs.impl.entityattribute.FabricEntityAttributes;
+import net.minecraft.entity.EntityType;
+import net.minecraft.entity.attribute.DefaultAttributeRegistry;
 import org.spongepowered.asm.mixin.Final;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Overwrite;
@@ -122,7 +124,7 @@ public abstract class ItemStackMixin {
 		for (EntityAttributeModifier modifier : modifiers.get(FabricEntityAttributes.MINING_SPEED)) {
 			d = applyModifier(d, modifier);
 		}
-
+		
 		cir.setReturnValue((float) d);
 	}
 }

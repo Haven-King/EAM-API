@@ -1,6 +1,6 @@
-package io.github.fablabsmc.fablabs.api.eam.v1;
+package io.github.fablabsmc.fablabs.api.entityattribute.v1;
 
-import io.github.fablabsmc.fablabs.impl.eam.FabricEntityAttributes;
+import io.github.fablabsmc.fablabs.impl.entityattribute.FabricEntityAttributes;
 
 import net.minecraft.entity.attribute.EntityAttributeModifier;
 import net.minecraft.entity.attribute.EntityAttributes;

@@ -1,4 +1,4 @@
-package io.github.fablabsmc.fablabs.impl.eam;
+package io.github.fablabsmc.fablabs.impl.entityattribute;
 
 import net.minecraft.entity.attribute.ClampedEntityAttribute;
 import net.minecraft.entity.attribute.EntityAttribute;

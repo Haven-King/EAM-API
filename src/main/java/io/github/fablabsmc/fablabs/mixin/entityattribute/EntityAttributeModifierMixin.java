@@ -1,11 +1,11 @@
-package io.github.fablabsmc.fablabs.mixin.eam;
+package io.github.fablabsmc.fablabs.mixin.entityattribute;
 
 import java.util.UUID;
 
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Redirect;
-import io.github.fablabsmc.fablabs.impl.eam.EntityAttributeModifierRegistry;
+import io.github.fablabsmc.fablabs.impl.entityattribute.EntityAttributeModifierRegistry;
 
 import net.minecraft.entity.attribute.EntityAttributeModifier;
 import net.minecraft.nbt.CompoundTag;

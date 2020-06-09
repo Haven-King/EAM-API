@@ -1,8 +1,7 @@
-package io.github.fablabsmc.fablabs.mixin.eam;
+package io.github.fablabsmc.fablabs.mixin.entityattribute;
 
-import net.fabricmc.loader.api.FabricLoader;
 import org.spongepowered.asm.mixin.Mixin;
-import io.github.fablabsmc.fablabs.api.eam.v1.FabricEntityAttributeModifiers;
+import io.github.fablabsmc.fablabs.api.entityattribute.v1.FabricEntityAttributeModifiers;
 
 import net.minecraft.block.Blocks;
 import net.minecraft.entity.EquipmentSlot;
@@ -15,6 +14,8 @@ import net.minecraft.item.ToolItem;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.Hand;
+
+import net.fabricmc.loader.api.FabricLoader;
 
 @Mixin(SwordItem.class)
 public class SwordItemDebugMixin extends ToolItem {

@@ -1,4 +1,4 @@
-package io.github.fablabsmc.fablabs.impl.eam;
+package io.github.fablabsmc.fablabs.impl.entityattribute;
 
 import java.util.HashMap;
 import java.util.UUID;
